@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+venv/
+.env/
+.envrc
+*.env
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and cache
+*.log
+*.sqlite3
+*.db
+.cache/
+*.egg-info/
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+
+# LangChain/LLM specific
+storage/
+*.jsonl
+*.parquet
+*.pdf
+node_modules/

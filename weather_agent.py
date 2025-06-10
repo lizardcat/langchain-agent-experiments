@@ -2,7 +2,6 @@
 Very simple agent that uses OpenAI API and OpenWeather API to deliver weather information about a particular location.
 """
 
-
 import os
 from pyowm.owm import OWM
 from pyowm.utils.config import get_default_config

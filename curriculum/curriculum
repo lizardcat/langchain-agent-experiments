@@ -1,0 +1,182 @@
+# LangChain Mastery Curriculum (30 Days)
+
+## Week 1: Foundations and Core Concepts
+
+### Day 1: LangChain Overview + Environment Setup
+
+* **Concepts**: Purpose, architecture, abstraction layers (chains, agents, tools, memory)
+* **Setup**: Python env, install LangChain, LLM (OpenAI or local), VS Code
+* **Exercise**: Load a basic OpenAI LLM and print a prompt/response
+* **Output**: Minimal LLM wrapper
+
+### Day 2: Prompts and PromptTemplates
+
+* **Concepts**: PromptTemplate, input variables, formatting
+* **Exercise**: Create dynamic prompts that accept parameters (e.g., name, topic)
+* **Output**: Parameterized QA system
+
+### Day 3: Chains (LLMChain, SimpleSequentialChain)
+
+* **Concepts**: Chain execution, passing outputs as inputs
+* **Exercise**: Create a 2-step chain (e.g., generate blog title → generate body)
+* **Output**: Blog writer chain
+
+### Day 4: Custom Chains + Logic Flow
+
+* **Concepts**: Custom chains, conditional logic
+* **Exercise**: Build a conditional response chain (e.g., detect sentiment → choose template)
+* **Output**: Sentiment-aware responder
+
+### Day 5: Tools + Toolchains
+
+* **Concepts**: Integrating functions as tools
+* **Exercise**: Create tools (e.g., calculator, search API) and compose a Toolchain
+* **Output**: Multi-tool function chain
+
+### Day 6: Memory Management
+
+* **Concepts**: ConversationBufferMemory, summarization memory
+* **Exercise**: Build a chatbot with memory using ConversationBuffer
+* **Output**: Stateful chatbot
+
+### Day 7: Review + Mini Project
+
+* **Project**: "AI Concierge" – remembers user preferences, uses tools to book events or answer queries
+
+---
+
+## Week 2: Agents and Tooling
+
+### Day 8: Introduction to Agents
+
+* **Concepts**: ReAct paradigm, zero-shot tools
+* **Exercise**: Basic agent that uses calculator and string tool
+* **Output**: Math-and-utility agent
+
+### Day 9: AgentExecutor + Intermediate Agents
+
+* **Concepts**: AgentExecutor, multi-step reasoning
+* **Exercise**: Build agent using OpenAI functions/tools
+* **Output**: Planning agent with multi-tool routing
+
+### Day 10: Tool Integration (Web Search, APIs)
+
+* **Exercise**: Connect a real-time API (e.g., weather, news)
+* **Output**: Real-time query agent
+
+### Day 11: Custom Tools
+
+* **Concepts**: Tool class, tool args schema
+* **Exercise**: Wrap a database query function or file parser
+* **Output**: Agent that fetches data from DB or filesystem
+
+### Day 12: Vector Stores and Embeddings
+
+* **Concepts**: FAISS, Chroma, OpenAI embeddings
+* **Exercise**: Create vector DB from documents and perform similarity search
+* **Output**: Simple RAG system
+
+### Day 13: RAG Pipeline Construction
+
+* **Concepts**: RetrievalQA, retriever + LLM
+* **Exercise**: Build a question-answering bot over custom docs
+* **Output**: RAG bot for local files
+
+### Day 14: Review + Mini Project
+
+* **Project**: "Smart Advisor" – agent with tools, memory, and RAG (web search, summarization, retrieval-based QA)
+
+---
+
+## Week 3: Advanced Usage and Scaling
+
+### Day 15: Advanced Prompt Engineering
+
+* **Techniques**: Few-shot, zero-shot, CoT, self-critique
+* **Exercise**: Design prompt structures for reasoning and debugging
+* **Output**: Chain with self-correction
+
+### Day 16: Advanced RAG with Metadata Filtering
+
+* **Concepts**: Vector metadata, retriever filters
+* **Exercise**: Filter retrieval results by tags (e.g., document type)
+* **Output**: Filtered RAG assistant
+
+### Day 17: Multi-Document QA + Compression
+
+* **Concepts**: Document compression, summary chains
+* **Exercise**: Summarize multiple PDFs and perform QA
+* **Output**: Multi-doc summarizer + RAG
+
+### Day 18: AgentToolkits (Zapier, Bing, etc.)
+
+* **Concepts**: Toolkits for SaaS and services
+* **Exercise**: Connect to external services using LangChain toolkits
+* **Output**: SaaS-integrated agent
+
+### Day 19: Async + Parallel Chains
+
+* **Concepts**: Concurrent execution, performance tuning
+* **Exercise**: Run parallel LLM chains for multiple tasks
+* **Output**: Parallel execution dashboard
+
+### Day 20: LangServe and API Deployment
+
+* **Concepts**: langserve, FastAPI integration
+* **Exercise**: Deploy chain as REST API
+* **Output**: Running LangChain endpoint
+
+### Day 21: Review + Mini Project
+
+* **Project**: "Enterprise Document Assistant" – upload PDFs, summarize, retrieve answers, web-integrated fallback, serve as API
+
+---
+
+## Week 4: Productionization and Capstone
+
+### Day 22: Monitoring + Logging
+
+* **Concepts**: LangSmith, observability
+* **Exercise**: Instrument chains for tracing and error handling
+* **Output**: Logged and traceable chain
+
+### Day 23: Unit Testing Chains + Agents
+
+* **Concepts**: Deterministic testing, prompt mocking
+* **Exercise**: Write test cases for chain inputs/outputs
+* **Output**: Tested LLM pipeline
+
+### Day 24: CI/CD Integration
+
+* **Concepts**: GitHub Actions, Docker, API deployment pipelines
+* **Exercise**: Dockerize a LangChain app and deploy via CI
+* **Output**: Auto-deployed LangChain app
+
+### Day 25: Multi-Modal Input (Vision, Audio)
+
+* **Concepts**: Integrate with Whisper, Vision models
+* **Exercise**: Image + speech input processing
+* **Output**: Vision-aware assistant
+
+### Day 26: Self-Improving Agents
+
+* **Concepts**: Feedback loops, self-evaluation
+* **Exercise**: Build an agent that critiques and refines its own output
+* **Output**: Self-correcting assistant
+
+### Day 27: Performance Optimization
+
+* **Concepts**: Prompt caching, token management
+* **Exercise**: Add prompt cache, profile token usage
+* **Output**: Optimized LLM app
+
+### Day 28–30: Capstone Project
+
+* **Title**: "Autonomous Research Agent"
+* **Features**:
+
+  * Accepts a topic
+  * Searches internet and internal corpus
+  * Summarizes findings
+  * Logs traceable steps
+  * Serves via REST API
